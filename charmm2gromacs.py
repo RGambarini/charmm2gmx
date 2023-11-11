@@ -339,6 +339,7 @@ for line in topFile:
 					lipidrtpFile.write(' [ impropers ]\n')					
 				segments = line.split()
 				imprNumber = len(segments[1:])/4
+				print(imprNumber)
 				for i in range(imprNumber):
 					atom1 = segments[4*i+1]
 					atom2 = segments[4*i+2]
