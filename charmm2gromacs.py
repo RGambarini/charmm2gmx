@@ -351,7 +351,7 @@ for line in topFile:
 				firstImpr = False
 			else:
 				segments = line.split()
-				imprNumber = len(segments[1:])/4
+				imprNumber = int(len(segments[1:])/4)
 				for i in range(imprNumber):
 					atom1 = segments[4*i+1]
 					atom2 = segments[4*i+2]
